@@ -33,6 +33,8 @@ public interface Logger {
 
     /**
      * 获取是否保存日志
+     *
+     * @return
      */
     boolean getSaveFlag();
 
