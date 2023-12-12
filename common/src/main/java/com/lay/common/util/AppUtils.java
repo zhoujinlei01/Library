@@ -7,7 +7,7 @@ import com.lay.common.util.log.LogUtils;
 import com.lay.common.util.log.MyLogger;
 
 /**
- * @author sm3243
+ * @author Lay
  * @date 2023/12/6
  */
 public class AppUtils {
