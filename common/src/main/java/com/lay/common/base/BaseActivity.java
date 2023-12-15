@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.lay.common.util.ActivityUtils;
+import com.lay.common.util.log.LogUtils;
 
 /**
  * @author Lay
@@ -17,6 +18,7 @@ import com.lay.common.util.ActivityUtils;
  */
 public abstract class BaseActivity extends AppCompatActivity {
     private static Toast toast;
+    protected final String TAG = getClass().getSimpleName();
     public Context context;
 
     @Override
@@ -85,5 +87,14 @@ public abstract class BaseActivity extends AppCompatActivity {
      */
     public void startActivity(Class<?> cls) {
         startActivity(new Intent(this, cls));
+    }
+
+    /**
+     * 日志输出(DEBUG)
+     *
+     * @param msg
+     */
+    public void logger(String msg) {
+        LogUtils.d(TAG, msg);
     }
 }
