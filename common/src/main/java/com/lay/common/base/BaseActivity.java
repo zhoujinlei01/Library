@@ -94,7 +94,7 @@ public abstract class BaseActivity extends AppCompatActivity {
      *
      * @param msg
      */
-    public void logger(String msg) {
-        LogUtils.d(TAG, msg);
+    public void loggerInfo(String msg) {
+        LogUtils.i(TAG, msg);
     }
 }

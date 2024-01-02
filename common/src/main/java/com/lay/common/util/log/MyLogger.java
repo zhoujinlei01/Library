@@ -159,7 +159,7 @@ public class MyLogger implements Logger {
      */
     private void logWithLink(int logPriority, String TAG, String msg) {
         StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
-        int index = 5;
+        int index = 6;
         String className = stackTrace[index].getFileName();
         String methodName = stackTrace[index].getMethodName();
         int lineNumber = stackTrace[index].getLineNumber();
